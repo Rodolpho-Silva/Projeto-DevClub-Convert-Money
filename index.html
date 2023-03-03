@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>DevClub Convert Money</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>DevClub Convert Money</h1>
+    </header>
+
+    <main>
+
+      <label>
+        Converter <b>de</b>
+        <select>
+          <option>R$ Reais Brasileiros</option>
+        </select>
+      </label>
+
+      <label>
+        Converter <b>para</b>
+        <select id="currency-select">
+          <option>US$ Dólar Americano</option>
+          <option>€ Euro</option>
+        </select>
+      </label>
+
+      <label>
+        <b>Valor</b>
+        <input id="input-real" placeholder="R$ 10.000,00">
+      </label>
+
+      <button id="convert-button" type="button">Converter</button>
+
+      <section>
+        <div class="currency-container">
+          <img class="brazil-flag" src="../images/brasil 2.png" alt="brazil-flag">
+          <p class="currency-name">Real</p>
+          <p class="currency-value" id="real-value-text" >R$ 10.000,00</p>
+        </div>
+
+        <img class="arrow-img" src="../images/Vector.png" alt="arrow-image">
+
+        <div class="currency-container">
+          <img class="usa-flag" id="current-flag" src="../images/estados-unidos.png" alt="usa-flag">
+          <p class="currency-name" id="currency-name">Dólar Americano</p>
+          <p class="currency-value" id="currency-value-text">US$ 2.000,00</p>
+        </div>
+
+      </section>
+    </main>
+  </div>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>DevClub Convert Money</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="first-div">
+      <h1>DevClub Conver Money</h1>
+      <p class="convert-text-upper">Converter <b> de</b></p>
+      <select>
+        <option>R$ Real Brasileiro</option>
+        <option>US$ Dólar Americano</option>
+      </select>
+      <br />
+      <p class="convert-text-down">Converter <b> para</b></p>
+      <select>
+        <option>US$ Dólar Americano</option>
+        <option>R$ Real Brasileiro</option>
+      </select>
+      <br />
+      <p class="value">Valor</p>
+      <input type="number" value="Insira o valor">
+      <br />
+      <button>Converter</button>
+      <div class="flag-div">
+        <img class="brazil-flag" src="../images/brasil 2.png" alt="brazil-flag" />
+        <p class="real-text-flag">Real</p>
+        <p class="real-text-value">R$ 10.000,00</p>
+        <img class="vector" src="../images/Vector.png" alt="vector" />
+        <br />
+        <img class="usa-flag" src="../images/estados-unidos.png" alt="american-flag" />
+        <p class="usa-text-flag">Dólar Americano</p>
+        <p class="usa-text-value">US$ 2.000,00</p>
+      </div>
+    </div>
+</main>
+    <div class="seccond-div">
+      <h1>DevClub Conver Money</h1>
+      <p class="convert-text-upper">Converter <b> de</b></p>
+      <select>
+        <option>R$ Real Brasileiro</option>
+        <option>€ Euro</option>
+      </select>
+      <br />
+      <p class="convert-text-down">Converter <b> para</b></p>
+      <select>
+        <option>€ Euro</option>
+        <option>R$ Real Brasileiro</option>
+      </select>
+      <br />
+      <p class="value">Valor</p>
+      <input type="number" step="0.01" name="quantity" min="0.01" value="Insira o valor">
+      <br />
+      <button>Converter</button>
+      <div class="flag-div">
+        <img class="brazil-flag" src="../images/brasil 2.png" alt="brazil-flag" />
+        <p class="real-text-flag">Real</p>
+        <p class="real-text-value">R$ 10.000,00</p>
+        <img class="vector" src="../images/Vector.png" alt="vector" />
+        <br />
+        <img class="euro-flag" src="../images/euro.png" alt="euro-flag" />
+        <p class="euro-text-flag">Euros</p>
+        <p class="euro-text-value">€ 1.800,00</p>
+      </div>
+    </div>
+    <div class="third-div">
+      <h1>DevClub Conver Money</h1>
+      <p class="convert-text-upper">Converter <b> de</b></p>
+      <select>
+        <option>R$ Real Brasileiro</option>
+        <option>Bitcoin</option>
+      </select>
+      <br />
+      <p class="convert-text-down">Converter <b> para</b></p>
+      <select>
+        <option>Bitcoin</option>
+        <option>R$ Real Brasileiro</option>
+      </select>
+      <br />
+      <p class="value">Valor</p>
+      <input type="number" step="0.01" name="quantity" min="0.01" value="Insira o valor">
+      <br />
+      <button type="button">Converter</button>
+      <div class="flag-div">
+        <img class="brazil-flag" src="../images/brasil 2.png" alt="brazil-flag" />
+        <p class="real-text-flag">Real</p>
+        <p class="real-text-value">R$ 10.000,00</p>
+        <img class="vector" src="../images/Vector.png" alt="vector" />
+        <br />
+        <img class="bitcoin-flag" src="../images/bitcoin.png" alt="bitcoin-flag" />
+        <p class="bitcoin-text-flag">Bitcoin</p>
+        <p class="bitcoin-text-value">0,1</p>
+      </div>
+    </div>
+</header>
+  </body>
+</html>-->
